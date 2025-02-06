@@ -33,3 +33,10 @@ Complex Complex::additionComplex(Complex b)
     sum.setImaginaryPart(imaginaryPart + b.getImaginaryPart());
     return sum;
 }
+Complex Complex::multiplicationComplex(Complex b)
+{
+    Complex produit;
+    produit.setRealPart((realPart*b.getRealPart()) - (imaginaryPart*b.getImaginaryPart()));
+    produit.setImaginaryPart((realPart*b.getImaginaryPart()) + (b.getRealPart()*imaginaryPart));
+    return produit;
+}
