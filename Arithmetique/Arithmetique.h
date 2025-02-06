@@ -13,5 +13,7 @@ class Arithmetique
         //Addition entre Rationnel et Complex
         static Complex addition(Complex a, Rationnel b);
         static Complex addition(Rationnel a, Complex b);
+        //Addition entre Rationnel Complex et Complex
+        static Complex addition(RationnalComplex a, Complex b);
 };
 #endif // ARITHMETIQUE_H_INCLUDED
