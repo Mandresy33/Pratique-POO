@@ -11,5 +11,7 @@ int main()
     b.setRealPart(1);
     b.setImaginaryPart(7);
     a.afficheComplex();
+    prod = a.multiplicationComplex(b);
+    prod.afficheComplex();
     return 0;
 }
