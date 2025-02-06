@@ -16,6 +16,7 @@ class Complex
         double getImaginaryPart();
         void afficheComplex();
         Complex additionComplex(Complex b);
+        Complex multiplicationComplex(Complex b);
 };
 
 #endif // COMPLEX_H_INCLUDED
