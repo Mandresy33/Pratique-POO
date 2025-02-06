@@ -49,3 +49,16 @@ Complex Arithmetique::addition(Rationnel a, Complex b)
     sum.setImaginaryPart(b.getImaginaryPart());
     return sum;
 }
+Complex Arithmetique::addition(RationnalComplex a, Complex b)
+{
+    Complex sum;
+    Rationnel i = a.getRealPart();
+    Rationnel j = a.getImaginaryPart();
+    double e = i.getNumerateur();
+    double f = i.getDenominateur();
+    sum.setRealPart(b.getRealPart() + (e/f));
+    e = j.getNumerateur();
+    f = j.getDenominateur();
+    sum.setImaginaryPart(b.getImaginaryPart() + (e/f));
+    return sum;
+}
